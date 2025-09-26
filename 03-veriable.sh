@@ -1,6 +1,6 @@
 #!/bin/basH
-PERSON1=ram    # VAR-NAME=VALUE
-PERSON2=sita
+PERSON1=sai    # VAR-NAME=VALUE
+PERSON2=pranathi
 
 
 echo "$PERSON1::h i how are you"
