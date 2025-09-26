@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Course Name: $COURSE_NAME: $COURSE "
+echo "Course Name: $course" # accessing env variable
