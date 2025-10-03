@@ -1,4 +1,5 @@
 #!/bin/bash
+#dynamic variables {passed as argument to the script}
 # Variable in shell scripting
 PERSON1=sai    # VAR-NAME=VALUE
 
@@ -15,3 +16,4 @@ echo "PID of current script is : $$"
 
 sleep 50 & # sleep for 50 seconds
 echo "PID of last background process is : $!"
+# $! is used to get the PID of last background process
