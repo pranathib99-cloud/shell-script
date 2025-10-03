@@ -2,7 +2,7 @@
 #string,  devops,or anything no special chars
 #boolean true/false
 #float 10.5
-#array  arr=(val1 val2 val3)
+#array  arr=(val1 val2 val3) list of names
 #dictionary  declare -A dict=(["key1"]="value1" ["key2"]="value2")
 #class  class_name(){...}  #not in bash but in other languages  
 #function  func_name(){...}

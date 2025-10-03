@@ -5,6 +5,10 @@
 
 NUMBER1=100       #integer
 NUMBER2=200      #integer
-
-sum=$((NUMBER1 + NUMBER2))  #arithmetic operation
+NAME=devops  #string
+sum=$((NUMBER1 + NUMBER2 + NAME))  #arithmetic operation
 echo "Sum: $sum"
+
+LEADERS=( "MODi" "PUTHIN" "kcr" "ktr")
+
+echo "all leaders: ${LEADERS[@]}"  #@ to get all values of names
