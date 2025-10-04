@@ -21,11 +21,13 @@
 #example
 NUMBER1=$1
 
-if [ $NUMBER -eq 10 ] ; then
+if [ $NUMBER -lt 10 ]; then
     echo " given number is equal than 10"       #-lt means less than
 
+    elif [ $NUMBER -eq 10 ]; then
+        echo "given number is equal to 10"  
     else
-        echo "given number is greater than or equal to 10"
+       echo "given number is greater than or equal to 10"
 fi
 
 
