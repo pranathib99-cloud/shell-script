@@ -43,3 +43,12 @@ scripting / programming
 #1 CALL FUNCTION it 
 #2 provide input to required function
 #3 get output from function
+
+
+#coloure codes 
+==============================================
+#\e[0m  #reset
+#\e[31m  #red
+#\e[32m  #green
+#\e[33m  #yellow
+#\e[34m  #blue
