@@ -22,5 +22,5 @@ VALIDATE $1 "MYSQL INSTALLATION"
 dnf install nginx -y 
 VALIDATE $1 "NGINX INSTALLATION"
 
-dnf install mongodb-mongodb -y
-VALIDATE $1 "MONGODB INSTALLATION"
+dnf install python3 -y
+VALIDATE $1 "python3 INSTALLATION"
