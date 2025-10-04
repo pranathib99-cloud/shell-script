@@ -14,4 +14,4 @@ echo "Sum: $sum"
 LEADERS=( "MODi" "PUTHIN" "kcr" "ktr")
 
 echo "all leaders: ${LEADERS[@]}"  #@ to get all values of names
-echo "first leader:${LEADERS[2]}"  #index starts from 0 #to get specific value {now 2nd index value is puthin}
+echo "first leader:${LEADERS[2]}"  #index starts from 0 #to get specific value {now 2nd index value is kcr}
