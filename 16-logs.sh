@@ -11,7 +11,7 @@ SCRIPT_NAME=$( echo $0 | cut -d "." -f1)
 LOGS_FILE="$LOGS_FLODER/$SCRIPT_NAME.log"
 
 mkdir -p "$LOGS_FLODER"
-echo "script started at : $(date)"
+echo "script started at : $(date)"  | tee -a $LOGS_FILE
 
 if [ $USERID -ne 0 ]; then 
     echo " ERROR:: please run this script as root privileges"
@@ -29,30 +29,30 @@ VALIDATE(){                  #Functions recevive input to /Aguments just like sc
 
 
 
-dnf install mysql -y                    &>>$LOGS_FILE
+dnf install mysql -y                    &>>$LOGS_FILE  | tee -a $LOGS_FILE
 #install if it is not found
 if [ $? -ne 0 ]; then
-    dnf install mysql -y                &>>$LOGS_FILE
+    dnf install mysql -y                &>>$LOGS_FILE   | tee -a $LOGS_FILE
 else
-    echo -e "mysql is already exit ... $Y skipping $N"
+    echo -e "mysql is already exit ... $Y skipping $N"   | tee -a $LOGS_FILE
 fi
       
 VALIDATE $1 "MYSQL INSTALLATION"
 
-dnf install nginx -y       &>>$LOGS_FILE
+dnf install nginx -y       &>>$LOGS_FILE  | tee -a $LOGS_FILE
 if [ $? -ne 0 ]; then
-    dnf install nginx -y   &>>$LOGS_FILE
+    dnf install nginx -y   &>>$LOGS_FILE   | tee -a $LOGS_FILE
 else
-    echo -e "ngnix is already exit ... $Y skipping $N"
+    echo -e "ngnix is already exit ... $Y skipping $N"  | tee -a $LOGS_FILE
 fi
       
 VALIDATE $1 "nginx INSTALLATION"
 
-dnf install python3 -y     &>>$LOGS_FILE
+dnf install python3 -y     &>>$LOGS_FILE   | tee -a $LOGS_FILE
 if [ $? -ne 0 ]; then
-dnf install python3 -y     &>>$LOGS_FILE
+dnf install python3 -y     &>>$LOGS_FILE    | tee -a $LOGS_FILE
 else
-    echo -e "ngnix is already exit ... $Y skipping $N"
+    echo -e "ngnix is already exit ... $Y skipping $N"  | tee -a $LOGS_FILE
 fi
       
 
