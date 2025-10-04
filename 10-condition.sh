@@ -4,11 +4,11 @@
 #condition2=false 
 # != nagative
 #if [ $codition1 == true ] && [ $condition2 == false ]; then
-    echo "both conditions are true"
+    #echo "both conditions are true"
 #elif [ $codition1 == true ] || [ $condition2 == true ]; then
     echo "one of the conditions is true"
 #else
-    echo "both conditions are false"
+    #echo "both conditions are false"
 #fi
 
 
