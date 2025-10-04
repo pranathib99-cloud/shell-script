@@ -45,10 +45,25 @@ scripting / programming
 #3 get output from function
 
 
-#coloure codes 
+#coloure codes (15 file/14 file)
 ==============================================
 #\e[0m  #reset
 #\e[31m  #red
 #\e[32m  #green
 #\e[33m  #yellow
 #\e[34m  #blue
+
+#log 
+==============================================
+#/var/log/myscript.log(creating a directory name is optional)/15-instalation-ad-col.sh(this is script name
+)
+
+#redirecting output to log file
+==============================================
+# 1 --success
+# 2 --error
+# &1 --both success and error
+# > = redirect
+# >> = append
+# -p = create parent directory if not exists
+# /dev/null = discard output
