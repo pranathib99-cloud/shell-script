@@ -24,7 +24,7 @@ dnf install mysql -y
 if [ $? -ne 0 ]; then
     dnf install mysql -y
 else
-    echo -e "mysql is already exit ... $Y success $N"
+    echo -e "mysql is already exit ... $Y skipping $N"
 fi
       
 VALIDATE $1 "MYSQL INSTALLATION"
@@ -33,10 +33,17 @@ dnf install nginx -y
 if [ $? -ne 0 ]; then
     dnf install nginx -y
 else
-    echo -e "ngnix is already exit ... $Y success $N"
+    echo -e "ngnix is already exit ... $Y skipping $N"
 fi
       
-VALIDATE $1 "nginx INSTALLATION
+VALIDATE $1 "nginx INSTALLATION"
 
 dnf install python3 -y
+if [ $? -ne 0 ]; then
+dnf install python3 -y
+else
+    echo -e "ngnix is already exit ... $Y skipping $N"
+fi
+      
+
 VALIDATE $1 "python3 INSTALLATION"
