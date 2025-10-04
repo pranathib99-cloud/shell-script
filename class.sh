@@ -30,3 +30,16 @@
 # 2 check if root access or not
 # 3 if root access then proceed else exit , otherwise stop and tell user to run as root
 
+
+scripting / programming
+==============================================
+#keep it simple and less lines more performance
+#reusable code
+#DRY - don't repeat yourself
+
+#FUNCTION
+==============================================
+#TAKE SOME INPUT= 
+#1 CALL FUNCTION it 
+#2 provide input to required function
+#3 get output from function
