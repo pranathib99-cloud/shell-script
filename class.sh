@@ -17,3 +17,16 @@
 #3. environment variable  #defined using export command and accessible to any child process or script
 #4. special variable  #predefined variables that have special meaning in shell scripting  
 
+==============================================
+# $?  #exit status of last command
+# $0  #name of the script
+# 0 = success
+# non-zero = failure
+
+# 1-127 #general errors
+
+# process to write a shell script
+# 1 check root shebang line #!/bin/bash
+# 2 check if root access or not
+# 3 if root access then proceed else exit , otherwise stop and tell user to run as root
+

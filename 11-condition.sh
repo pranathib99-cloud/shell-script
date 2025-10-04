@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "read number the command line argument"
+echo "enter a number"
 read NUMBER
 
 if (($NUMBER % 2)) #modulus operator
