@@ -21,8 +21,8 @@
 #example
 NUMBER1=$1
 
-if [ $NUMBER -lt 10 ] ; then
-    echo " given number is less than 10"       #-lt means less than
+if [ $NUMBER -eq 10 ] ; then
+    echo " given number is equal than 10"       #-lt means less than
 
     else
         echo "given number is greater than or equal to 10"
