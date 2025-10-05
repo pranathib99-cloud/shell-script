@@ -37,7 +37,7 @@ scripting / programming
 #reusable code
 #DRY - don't repeat yourself
 
-#FUNCTION
+#FUNCTION     `(13 file)`
 ==============================================
 #TAKE SOME INPUT= 
 #1 CALL FUNCTION it 
@@ -67,3 +67,9 @@ scripting / programming
 # >> = append
 # -p = create parent directory if not exists
 # /dev/null = discard output
+when colour needed to log files no needed becoz log file is mechin e not human
+===============================================17 s
+# recap-variables,data types,conditions,functions,exit status,logs,colors
+#loops / iteration - less  code more performance,dynomic code ,less time consuming
+
+
