@@ -70,6 +70,13 @@ scripting / programming
 when colour needed to log files no needed becoz log file is mechin e not human
 ===============================================17 s
 # recap-variables,data types,conditions,functions,exit status,logs,colors
-#loops / iteration - less  code more performance,dynomic code ,less time consuming
+#loops / iteration - less  code more performance,dynomic code ,less time consuming *****18
+
+
+#error handling
+==============================================
+#error handling - if error then what to do
+#ecpected error should be handled
+#unecpected error should be logged and notified
 
 
