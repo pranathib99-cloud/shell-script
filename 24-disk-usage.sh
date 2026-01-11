@@ -16,3 +16,5 @@ while read -r line; do
      MESSAGE+="high disk usage $PARTITION=$USAGE% <br> "
   fi
 done <<< "$DISK_USAGE"
+
+echo -e "Message Body: $MESSAGE"
