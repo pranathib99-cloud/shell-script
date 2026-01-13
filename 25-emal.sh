@@ -1,8 +1,8 @@
 #!/bin/bash
 
 DISK_THRESHOLD=75
-EMAIL="admin@example.com"
-HOSTNAME=$(b.pranathi41@gmail.com)
+EMAIL="b.pranathi41@gamil.com"
+HOSTNAME=$(hostname)
 MESSAGE=""
 
 df -hT | grep -v Filesystem | while read -r line
