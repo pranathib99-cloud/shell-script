@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_THRESHOLD=75
-EMAIL="b.pranathi41@gamil.com"
+EMAIL="admin@example.com"
 HOSTNAME=$(hostname)
 MESSAGE=""
 
