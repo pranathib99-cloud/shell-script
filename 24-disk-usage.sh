@@ -1,19 +1,34 @@
 #!/bin/bash
 
-DISK_USAGE=$(df -hT | grep -v Filesysem)
-THRESHIOD=2 #project keep as on 75
+DISK_USAGE=$( df -hT | grep -v Filesystem)
+DISK_THRESHOLD=2 # project keep it as on 75
 MESSAGE=""
-while IFS= read -r line;
+While IFS= read -r line
 
 do 
-  USAGE=$(echo $line |df -hT | awk '{print $6}' |cut -d "%" -f1)
-  PARTITION=$(echo $line | df -hT | awk '{print $7}') 
-  if [ $USAGE -ge $THRESHOLD ]; then
-     MESSAGE+="high disk usage on $PARTITION: $USAGE % <br> "
-  fi
-
-done <<< DISK_USAGE
+  USAGE=$( echo $line | awk '{ print $6}' | cut -d "%" -f1 )
+  PARTITION=$( echo $line | awk '{ print $7}')
+  if [ $USAGE -ge $DISK_THRESHOLD ] ; then
+     MESSAGE+="High Disk Usage On $PARTITION: $USAGE % <br>"
+    fi
+done <<< "$DISK_USAGE"
 echo -e "$MESSAGE"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
