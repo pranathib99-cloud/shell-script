@@ -3,7 +3,7 @@
 DISK_USAGE=$(df -hT | grep -v Filesysem)
 THRESHIOD=2 #project keep as on 75
 MESSAGE=""
-while IFS = read -r line
+while IFS= read -r line;
 
 do 
   USAGE=$(echo $line |df -hT | awk '{print $6}' |cut -d "%" -f)
