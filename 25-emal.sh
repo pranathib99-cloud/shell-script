@@ -19,3 +19,8 @@ if [ -n "$MESSAGE" ]; then
   echo -e "Alert from $HOSTNAME\n\n$MESSAGE" | s-nail -s "Disk Usage Alert" "$EMAIL"
 fi
 
+
+MESSAGE="Test Alert"
+echo -e "Alert\n$MESSAGE" | s-nail -s "Test" "$EMAIL"
+
+
