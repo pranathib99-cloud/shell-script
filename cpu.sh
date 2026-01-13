@@ -1,8 +1,8 @@
 #!/bin/bash
 
-DISK_THRESHOLD=80
-CPU_THRESHOLD=80
-RAM_THRESHOLD=80
+DISK_THRESHOLD=2
+CPU_THRESHOLD=2
+RAM_THRESHOLD=2
 
 echo "===== Disk Usage Check ====="
 df -h | grep -v Filesystem | while read line
