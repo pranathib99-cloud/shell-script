@@ -16,5 +16,7 @@ do
 done
 
 if [ -n "$MESSAGE" ]; then
-  echo -e "Alert from $HOSTNAME\n\n$MESSAGE" | mailx -s "Disk Usage Alert" "$EMAIL"
+  echo -e "Alert from $HOSTNAME\n\n$MESSAGE" | s-nail "Disk Usage Alert" "$EMAIL"
+  echo "Disk alert" | mail -s "Disk Alert" alert@company.com
+
 fi
