@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_THRESHOLD=75
-EMAIL="admin@example.com"
+EMAIL="b.pranathi41@gmail.com"
 HOSTNAME=$(hostname)
 MESSAGE=""
 
@@ -17,6 +17,5 @@ done
 
 if [ -n "$MESSAGE" ]; then
   echo -e "Alert from $HOSTNAME\n\n$MESSAGE" | s-nail "Disk Usage Alert" "$EMAIL"
-  echo "Disk alert" | mail -s "Disk Alert" alert@company.com
 
 fi
